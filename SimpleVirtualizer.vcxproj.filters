@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="vm">
+      <UniqueIdentifier>{020e557a-7d63-4455-b905-2eb1866b862a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="instructions">
+      <UniqueIdentifier>{41d65179-33db-4337-994f-7f751ecb5fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="instructions\jcc">
+      <UniqueIdentifier>{4f00c0de-532b-47a4-8389-edccc1b9495f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="instructions\rep">
+      <UniqueIdentifier>{473fbe17-9af6-4c26-9da1-ecfa76de87ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loader">
+      <UniqueIdentifier>{27a466dc-0bb5-431f-9ac8-a6357840f372}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SimpleVirtualizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vm.h">
+      <Filter>vm</Filter>
+    </ClInclude>
+    <ClInclude Include="register.h">
+      <Filter>vm</Filter>
+    </ClInclude>
+    <ClInclude Include="instruction.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="push.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="pop.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="add.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="eflags.h">
+      <Filter>vm</Filter>
+    </ClInclude>
+    <ClInclude Include="sub.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="two_op.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="mov.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="lea.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="call.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="single_op.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="data.h">
+      <Filter>vm</Filter>
+    </ClInclude>
+    <ClInclude Include="ret.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="jmp.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="cmp.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="xor.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="and.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="or.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="jcc.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="je.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="jne.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="jae.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="op_type.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="int3.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="stos.h">
+      <Filter>instructions\rep</Filter>
+    </ClInclude>
+    <ClInclude Include="rep_flags.h">
+      <Filter>instructions\rep</Filter>
+    </ClInclude>
+    <ClInclude Include="jle.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="movsx.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="inc.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="jl.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="dec.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="movzx.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="shr.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="neg.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="imul.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="cdqe.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="rol.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="ror.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="jnle.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="setnz.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="jnbe.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="cmovb.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="cmovz.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="cmovs.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="jbe.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="jnl.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="shl.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="not.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="jb.h">
+      <Filter>instructions\jcc</Filter>
+    </ClInclude>
+    <ClInclude Include="cmpxchg.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="movs.h">
+      <Filter>instructions\rep</Filter>
+    </ClInclude>
+    <ClInclude Include="xchg.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="setz.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="cmovnz.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="cpuid.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="xgetbv.h">
+      <Filter>instructions</Filter>
+    </ClInclude>
+    <ClInclude Include="loader.h">
+      <Filter>loader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
